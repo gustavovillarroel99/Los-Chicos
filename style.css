@@ -1,0 +1,178 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2f2f2f;
+  background: #fff7e6;
+  overflow-x: hidden;
+}
+
+/* Fundo animado estilo México */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 50%, #009c3b 10%, #D50000 90%);
+  animation: move 22s linear infinite;
+  z-index: -1;
+}
+
+@keyframes move {
+  0% { transform: translate(0,0) rotate(0deg); }
+  50% { transform: translate(-80px, 60px) rotate(180deg); }
+  100% { transform: translate(0,0) rotate(360deg); }
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 104, 71, 0.95); /* Verde bandeira */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 15px 10%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 50px;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.4));
+}
+
+header h1 {
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+/* Menu */
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #D50000;
+  color: #fff;
+}
+
+/* Botão hambúrguer */
+.menu-toggle {
+  display: none;
+  font-size: 2.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Conteúdo principal */
+main {
+  padding-top: 120px;
+  text-align: center;
+}
+
+section {
+  padding: 60px 10%;
+  background: rgba(255,255,255,0.92);
+  margin: 30px auto;
+  border-radius: 15px;
+  max-width: 800px;
+  border: 3px solid #F4C430; /* Amarelo asteca */
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+section h2 {
+  color: #D50000;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Botão estilo mexicano */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #D50000, #006847); /* vermelho → verde */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #006847, #D50000);
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background-color: rgba(0, 104, 71, 0.95);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-top: 4px solid #F28C28; /* laranja mexicano */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0,104,71,0.95);
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 12px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}

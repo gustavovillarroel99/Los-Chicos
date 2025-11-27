@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Quiz interativo sobre o México">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz sobre o México</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./images/Logo.png" alt="Logo">
+            </div>
+            <h1>Quiz sobre o México</h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="cultura.html">Cultura</a>
+                <a href="sobre_o_pais.html">História</a>
+                <a href="pontos_turisticos.html">Pontos Turisticos</a>
+                <a href="culinaria.html">Culinária</a>
+                <a href="economia.html">Economia</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre este quiz</h2>
+            <p>Este quiz foi desenvolvido para testar seus conhecimentos sobre o México, incluindo geografia, cultura, culinária e economia.</p>
+        </section>
+
+        <section>
+            <h2>Pergunta 1: Qual é a capital do México?</h2>
+            <form>
+                <input type="radio" value="Monterrey" id="p1a" name="Pergunta1">
+                <label for="p1a">Monterrey</label><br>
+                <input type="radio" value="Guadalajara" id="p1b" name="Pergunta1">
+                <label for="p1b">Guadalajara</label><br>
+                <input type="radio" value="Cidade do México" id="p1c" name="Pergunta1">
+                <label for="p1c">Cidade do México</label><br>
+                <input type="radio" value="Cancún" id="p1d" name="Pergunta1">
+                <label for="p1d">Cancún</label><br>
+            </form>
+        </section>
+
+        <section>
+            <h2>Pergunta 2: Qual é a moeda oficial do México?</h2>
+            <form>
+                <input type="text" id="p2" name="Pergunta2" placeholder="Digite sua resposta...">
+            </form>
+        </section>
+
+        <section>
+            <h2>Pergunta 3: Quais desses pratos são típicos da culinária mexicana?</h2>
+            <form>
+                <input type="checkbox" id="p3a" name="Pergunta3" value="Tacos">
+                <label for="p3a">Tacos</label>
+                <input type="checkbox" id="p3b" name="Pergunta3" value="Sushi">
+                <label for="p3b">Sushi</label>
+                <input type="checkbox" id="p3c" name="Pergunta3" value="Guacamole">
+                <label for="p3c">Guacamole</label>
+                <input type="checkbox" id="p3d" name="Pergunta3" value="Pizza">
+                <label for="p3d">Pizza</label>
+            </form>
+        </section>
+
+        <section>
+            <h2>Pergunta 4: Qual cidade é representada na imagem abaixo?</h2>
+            <figure> 
+                <img src="./images/ponto1.png" alt="Imagem de Chichen Itza, México">
+                <figcaption>Figura 1: Monumento famoso do México</figcaption>
+            </figure>
+            <input type="text" id="p4" name="Pergunta4" placeholder="Digite uma resposta...">
+        </section>
+
+        <section>
+            <h2>Pergunta 5: Qual é um importante setor da economia mexicana?</h2>
+            <form>
+                <input type="radio" value="Petróleo" id="p5a" name="Pergunta5">
+                <label for="p5a">Petróleo</label><br>
+                <input type="radio" value="Café" id="p5b" name="Pergunta5">
+                <label for="p5b">Café</label><br>
+                <input type="radio" value="Madeira" id="p5c" name="Pergunta5">
+                <label for="p5c">Madeira</label><br>
+                <input type="radio" value="Algodão" id="p5d" name="Pergunta5">
+                <label for="p5d">Algodão</label><br>
+            </form>
+        </section>
+
+        <section>
+            <h2>Tabela de Pontuação</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                         <th>Pontuação</th>
+                         <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Não desista! Pesquise mais sobre o México.</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Bom! Você conhece algumas coisas sobre o México.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Excelente! Você conhece bem o México.</td>
+                    </tr> 
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Continue aprendendo sobre este país fascinante!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique aqui para ver as respostas do quiz</summary>
+                <ol>
+                    <li>Cidade do México</li>
+                    <li>Peso Mexicano</li>
+                    <li>Tacos, Guacamole</li>
+                    <li>Chichen Itza</li>
+                    <li>Petróleo</li>
+                </ol>
+            </details>
+        </section>
+
+        <section>
+            <h2>Nos dê o seu feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de Contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comentarios">Comentários:</label>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea><br>
+                    <button type="button" onclick="alert('FEEDBACK ENVIADO')">Envie o feedback</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Quiz sobre o México. Todos os direitos reservados</p>
+    </footer>
+    
+</body>
+</html>

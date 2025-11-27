@@ -1,0 +1,134 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #E6F0EA; /* verde muito claro, suave para leitura */
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #006341; /* verde México escuro */
+  padding: 15px 8%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img { height: 48px; }
+
+header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav { display: flex; gap: 14px; }
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: 0.25s ease;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+/* MAIN */
+main {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CARD */
+.tourist-card {
+  background: #fff8f0; /* bege claro para contraste */
+  color: #1a2a47; /* azul escuro para títulos/textos */
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #d0c1b0; /* borda suave estilo ocre */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.tourist-card img {
+  width: 35%;
+  object-fit: cover;
+}
+
+.tourist-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.tourist-content h2 {
+  color: #B22222; /* vermelho estilo México */
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.tourist-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.tourist-content ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.tourist-content li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+  background: #006341; /* verde México escuro */
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 820px) {
+  header h1 { font-size: 1.4rem; }
+  nav { display: none; }
+
+  .tourist-card {
+    flex-direction: column;
+    margin: 0 12px;
+  }
+
+  .tourist-card img { width: 100%; height: 220px; }
+}
