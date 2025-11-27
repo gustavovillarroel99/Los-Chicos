@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +7,13 @@
 }
 
 body {
-  background: #E6F0EA; /* verde muito claro, suave para leitura */
+  background: #E6F0EA; 
   color: #333;
 }
 
-/* HEADER */
+
 header {
-  background: #006341; /* verde México escuro */
+  background: #006341; 
   padding: 15px 8%;
   width: 100%;
   position: fixed;
@@ -54,7 +54,7 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* MAIN */
+
 main {
   padding-top: 120px;
   padding-bottom: 40px;
@@ -65,12 +65,12 @@ main {
 
 /* CARD */
 .tourist-card {
-  background: #fff8f0; /* bege claro para contraste */
-  color: #1a2a47; /* azul escuro para títulos/textos */
+  background: #fff8f0;
+  color: #1a2a47; 
   max-width: 900px;
   margin: 0 auto;
   border-radius: 10px;
-  border: 1px solid #d0c1b0; /* borda suave estilo ocre */
+  border: 1px solid #d0c1b0; 
   box-shadow: 0 2px 6px rgba(0,0,0,0.12);
   overflow: hidden;
   display: flex;
@@ -88,7 +88,7 @@ main {
 }
 
 .tourist-content h2 {
-  color: #B22222; /* vermelho estilo México */
+  color: #B22222; 
   font-size: 1.6rem;
   margin-bottom: 10px;
   font-weight: 600;
@@ -110,9 +110,9 @@ main {
   line-height: 1.5;
 }
 
-/* FOOTER */
+
 footer {
-  background: #006341; /* verde México escuro */
+  background: #006341; 
   color: #fff;
   text-align: center;
   padding: 18px;
@@ -120,7 +120,7 @@ footer {
   font-size: 0.95rem;
 }
 
-/* RESPONSIVIDADE */
+
 @media (max-width: 820px) {
   header h1 { font-size: 1.4rem; }
   nav { display: none; }
