@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ body {
   }
 }
 
-/* HEADER */
+
 header {
   background: rgba(0, 99, 65, 0.9);
   padding: 15px 8%;
@@ -55,7 +55,7 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* MENU */
+
 nav {
   display: flex;
   gap: 14px;
@@ -75,7 +75,7 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* MAIN */
+
 main {
   padding-top: 120px;
   padding-bottom: 40px;
@@ -101,7 +101,7 @@ main {
   box-shadow: 0 8px 22px rgba(0,0,0,0.15);
 }
 
-/* TÍTULOS */
+
 .card h2 {
   color: #006341;
   font-size: 1.7rem;
@@ -122,7 +122,7 @@ main {
   color: #b22222;
 }
 
-/* LISTA */
+
 .card ul {
   margin-top: 8px;
   padding-left: 20px;
@@ -133,7 +133,7 @@ main {
   line-height: 1.5;
 }
 
-/* FOOTER */
+
 footer {
   background: rgba(0, 99, 65, 0.9);
   color: #fff;
@@ -142,7 +142,7 @@ footer {
   margin-top: 40px;
 }
 
-/* RESPONSIVIDADE */
+
 @media (max-width: 820px) {
   header h1 {
     font-size: 1.4rem;
