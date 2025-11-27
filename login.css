@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #fff7e6; /* Bege claro */
+    background: #fff7e6; 
 }
 
 /* ============================== */
@@ -15,7 +15,7 @@ body {
 
 header {
     width: 100%;
-    background: #0d6530; /* Verde mexicano */
+    background: #0d6530; 
     padding: 12px 0;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     position: fixed;
@@ -36,7 +36,7 @@ header {
     width: 60px;
 }
 
-/* Título no centro */
+
 header h1 {
     color: white;
     font-size: 26px;
@@ -45,7 +45,7 @@ header h1 {
     text-align: center;
 }
 
-/* Menu */
+
 nav a {
     margin-left: 18px;
     text-decoration: none;
@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffdd00; /* Amarelo mexicano */
+    color: #ffdd00; 
 }
 
 /* ============================== */
@@ -74,7 +74,7 @@ nav a:hover {
 
 .box h2 {
     text-align: center;
-    color: #c40000; /* Vermelho mexicano */
+    color: #c40000; 
     margin-bottom: 20px;
 }
 
